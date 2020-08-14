@@ -35,7 +35,7 @@ class SignUp extends React.Component {
       );
 
       await createUserProfileDocument(user, { displayName });
-      this.state({
+      this.setState({
         displayName: "",
         emai: "",
         password: "",
@@ -54,7 +54,6 @@ class SignUp extends React.Component {
 
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
-    console.log("should be" + displayName);
     return (
       <div className="sign-up">
         <h2 className="title">I do not have an account</h2>
