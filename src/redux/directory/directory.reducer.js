@@ -40,4 +40,4 @@ const INITIAL_STATE = { sections: [
       }
   }
 
-  export directoryReducer;
+  export default directoryReducer;
